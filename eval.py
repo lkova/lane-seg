@@ -20,6 +20,12 @@ if __name__ == "__main__":
         default="",
         help='Path to the image that needs to be tested. (default: "")',
     )
+    parser.add_argument(
+        "--save_img",
+        type=str,
+        default="/saved_images/eval_img.png",
+        help='Path to the image that needs to be tested. (default: "")',
+    )
 
     args = parser.parse_args()
     if args.image_path == "":
@@ -47,5 +53,9 @@ if __name__ == "__main__":
 
     image_with_mask = apply_mask(image_real=image_real, predicted_mask=predicted_mask)
     image_with_mask = Image.fromarray((image_with_mask).astype(np.uint8)).convert("RGB")
+
+    if args.save_img != "":
+        image_with_mask.save(args.save_img)
+
     plt.imshow(image_with_mask)
     plt.show()
