@@ -23,7 +23,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--save_img",
         type=str,
-        default="/saved_images/eval_img.png",
+        default="",
         help='Path to the image that needs to be tested. (default: "")',
     )
 
