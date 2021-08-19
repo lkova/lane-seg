@@ -25,15 +25,6 @@ TRAIN_MASK_DIR = "train_label"
 VAL_IMG_DIR = "val"
 VAL_MASK_DIR = "val_label"
 
-"""
-To do:
-1. Completely switch to parsing
-2. Switch to training the network normally
-3. Add Tensorboard
-4. Upload to git
-5. Write Readme
-"""
-
 step = 0
 
 
