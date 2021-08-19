@@ -18,7 +18,7 @@ Example:\
 # Evaluation on a single image
 ```python eval.py --image_path /path/to/image.png```
 
-
+![alt text](saved_images/eval_img.png)
 # To-do
 1. Add accuracy into training
 2. Improve tensorboard output: include more information, add images
