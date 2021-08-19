@@ -4,21 +4,20 @@ Experimenting with lane segmentation. The first implementation is with vanilla *
 The dataset is simple dataset from carla simulator.
 
 # Training
-Parameters that can be sent during training:
-Learning Rate, **--lr**
-Number of epochs, **--epochs**
-Batch size, **--batch_size**
-Resume training, **--resume**
-Number of workers, **--num_workers**
+Parameters that can be sent during training:\
+Learning Rate, **--lr**\
+Number of epochs, **--epochs**\
+Batch size, **--batch_size**\
+Resume training, **--resume**\
+Number of workers, **--num_workers**\
 Dataset path, **--dataset_path**
 
-Example:
+Example:\
 ```python train.py --dataset_path data/ --lr 0.001 --batch_size 16```
 
 # Evaluation on a single image
 ```python eval.py --image_path /path/to/image.png```
 
-# Comment on the results and future improv
 
 # To-do
 1. Add accuracy into training
